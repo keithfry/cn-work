@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebController {
     @RequestMapping("/hello/{name}")
     String hello(@PathVariable String name) {
-        return "Hello, " + name + "!";
+        return "Hello, your name is '" + name + "'!";
     }
 
 }
